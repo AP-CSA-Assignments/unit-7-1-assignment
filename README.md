@@ -1,4 +1,4 @@
-# unit-6-5-assignment
+# unit-7-1-assignment
 
 ## Git Config
 ```
@@ -22,30 +22,25 @@ After you compile the shape classes, you only need to compile and run `Main.java
 
 # Instructions  
 
-## Problem 1
-Write a method named `reverse` that takes in an array of Strings as parameter, and prints each String in reverse (as in, the word itself is printed in reverse; you do NOT need to reverse the order of the array).  Use a for-each loop in your solution.
+Write a Java program that allows a user to input multiple words.  Your program should stop accepting words when the user enters "STOP".  Store the words in an `ArrayList`.  The word STOP should not be stored in the list.
 
+Next, print the size of the list, followed by the list itself.
+
+Then, replace the last index with the first one and remove the value from the first index, but only if the list has a length greater than two.  Finally, reprint the list.
+
+Sample Run:
 ```
-Enter array length:
-4
+Please enter words, enter STOP to stop the loop.
+phone
+computer
+laptop
+television
+newspaper
+STOP
 
-Enter values:
-hill
-mold
-tree
-lake
-
-Reversed:
-llih
-dlom
-eert
-ekal
+5
+[phone, computer, laptop, television, newspaper]
+[computer, laptop, television, phone]
 ```
 
-## Problem 2
-Write a method named `product` that takes in an array of integers as parameter, and returns the product of the elements of the array.  Use a for-each loop in your solution.
-
-## Problem 3
-Write a method named `average` that takes in an array of doubles as parameter, and returns the average of the elements of the array.  Use a for-each loop in your solution.
-
-  
+Hint: use a while loop to take the user input - remember that this type of loop runs until the condition you specify is no longer met so you can base this off the user input.
